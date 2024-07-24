@@ -1,0 +1,11 @@
+{
+  "name": "foodapp",
+  "version": "1.0.0",
+  "description": "Food App in Reactjs",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Nishka Shrimali",
+  "license": "ISC"
+}

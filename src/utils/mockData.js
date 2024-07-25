@@ -1,4 +1,3 @@
-
 const resList = [
     {
       info: {

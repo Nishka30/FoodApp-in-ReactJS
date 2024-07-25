@@ -1,5 +1,5 @@
 import { MdStarRate } from "react-icons/md";
-// Restaurant Card Component
+import {CDN_URL} from "../utils/constants";
 const RestaurantCard = (props) => {
     const { restaurantData } = props;
   
@@ -17,7 +17,7 @@ const RestaurantCard = (props) => {
       <div className="restaurant-card">
         <img
           src={
-            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+            CDN_URL +
             cloudinaryImageId
           }
           alt={name}

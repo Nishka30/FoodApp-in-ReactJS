@@ -1,5 +1,5 @@
 import RestaurantCard from "./RestaurantCard";
-import resList from "../Utils/resList";
+import resList from "../utils/mockData";
 import { CiSearch } from "react-icons/ci";
  // Body Component
 const Body = () => {

@@ -1,8 +1,10 @@
+
+
 import { MdStarRate } from "react-icons/md";
 import {CDN_URL} from "../utils/constants";
 const RestaurantCard = (props) => {
     const { restaurantData } = props;
-  
+
     const {
       cloudinaryImageId,
       name,

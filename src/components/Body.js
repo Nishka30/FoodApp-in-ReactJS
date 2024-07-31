@@ -4,7 +4,7 @@ import resList from "../utils/mockData";
 
 // Body Component
 const Body = () => {
-  const [ListOfRestaurants, setListOfRestaurants] = useState(resList);
+  const [ListOfRestaurants, setListOfRestaurants] = useState(resList );
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -17,6 +17,7 @@ const Body = () => {
       const response = await fetch(
         "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.51800&lng=88.38320&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
       );
+      
       //if promise is not resolved
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -39,7 +40,7 @@ const Body = () => {
       setLoading(false);
     }
   };
-
+ //filtering top rated restaurants
   const handleFilter = () => {
     const filteredList = ListOfRestaurants.filter(
       (res) => res.info.avgRating > 4.5

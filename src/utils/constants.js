@@ -1,7 +1,44 @@
-//Swiggy cloudinary URL
-export const CDN_URL=
-"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-export const LOGO_URL=
-"https://www.google.com/url?sa=i&url=https%3A%2F%2Fsimilarpng.com%2Fgood-food-logo-design-on-transparent-background-png%2F&psig=AOvVaw12iiyRjzIE3377L4yNC7oF&ust=1722016086612000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOD66fvfwocDFQAAAAAdAAAAABAE";
+// Image CDN URL for Restaurant card
+export const IMG_CDN_URL = `${process.env.REACT_MEDIA_ASSETS_BASE_URL}image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/`;
 
- 
+// Image CDN URL for Restaurant Menu
+export const ITEM_IMG_CDN_URL = `${process.env.REACT_MEDIA_ASSETS_BASE_URL}image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/`;
+
+// Swiggy API to get Restaurant data using foodfire server
+export const FOODFIRE_API_URL = `${process.env.REACT_FOODFIRE_APP_BASE_URL}restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING`;
+
+// Swiggy API to get Restaurant Menu data using foodfire server
+export const FOODFIRE_MENU_API_URL = `${process.env.REACT_FOODFIRE_APP_BASE_URL}menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=`;
+
+// shimmer card unit
+export const shimmer_card_unit = 20;
+
+// shimmer Menu card unit
+export const shimmer_menu_card_unit = 10;
+
+// Github - username
+export const Github_UserName = "Nishka30";
+export const Github_Repository_Name = "Namaste-React";
+
+// Github API for User
+export const Github_API_User = "https://api.github.com/users/";
+
+// Social Media Links
+export const Linkedin_Link = "https://www.linkedin.com/in/nishka-codes/";
+export const Twitter_Link = "https://x.com/Nishka30";
+export const Github_Link = "https://github.com/Nishka30";
+export const Email_Link = "mailto:shrimalinishka@gmail.com";
+
+// Github Authorization Token
+export const options = {
+  method: "GET",
+  headers: {
+    Authorization: "",
+  },
+};
+
+// menu items api card type key
+export const MENU_ITEM_TYPE_KEY =
+  "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory";
+export const RESTAURANT_TYPE_KEY =
+  "type.googleapis.com/swiggy.presentation.food.v2.Restaurant";

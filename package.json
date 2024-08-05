@@ -21,5 +21,8 @@
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.26.0",
     "yup": "^1.4.0"
-  }
+  },
+  "browserslist": [
+    "last 10 versions"
+  ]
 }

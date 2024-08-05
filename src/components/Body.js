@@ -1,7 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState } from "react"; /* This is named export */
 import Shimmer from "./Shimmer"; /* This is default export */
-import { FOODFIRE_API_URL } from "../../public/Images/foodFireLogo.png";
+import { FOODFIRE_API_URL } from "../../public/Common/constants";
 import { Link } from "react-router-dom";
 import { filterData } from "../Utils/Helper"; // For reusability or readability filterData function is added in Helper.js file of Utils folder
 import useResData from "../Hooks/useResData"; // imported custom hook useResData which gives All Restaurant and  Filtered Restaurant data from swigy api
@@ -50,7 +50,7 @@ const Body = () => {
           className="search-input"
           placeholder="Search a restaurant you want..."
           value={searchText}
-          // update the state variable searchText when we typing in input box
+          // Binds the searchText state variable to the input value.
           onChange={(e) => {
             setSearchText(e.target.value);
             // when user will enter the data, it automatically called searchData function so it work same as when you click on Search button

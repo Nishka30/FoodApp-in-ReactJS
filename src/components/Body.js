@@ -24,17 +24,25 @@ const Body = () => {
 
   // use searchData function and set condition if data is empty show error message
   const searchData = (searchText, restaurants) => {
+//Check if searchText is not empty:    
     if (searchText !== "") {
+//Filter the restaurants array using filterData
       const filteredData = filterData(searchText, restaurants);
+//Set the filteredRestaurants state to the filtered data      
       setFilteredRestaurants(filteredData);
+//Clear any previous error message      
       setErrorMessage("");
+
+//Check if no results were found:      
       if (filteredData?.length === 0) {
         setErrorMessage(
           `Sorry, we couldn't find any results for "${searchText}"`
         );
       }
+//Handle the case where searchText is empty:
     } else {
       setErrorMessage("");
+//Set the filteredRestaurants state to the full list of restaurants      
       setFilteredRestaurants(restaurants);
     }
   };
@@ -54,6 +62,7 @@ const Body = () => {
           onChange={(e) => {
             setSearchText(e.target.value);
             // when user will enter the data, it automatically called searchData function so it work same as when you click on Search button
+            //Updates searchText and triggers searchData whenever the input value changes.
             searchData(e.target.value, allRestaurants);
           }}
         />

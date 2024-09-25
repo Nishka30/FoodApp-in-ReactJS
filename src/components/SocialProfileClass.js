@@ -1,5 +1,6 @@
 import { Component } from "react";
-import { SiGmail, SiLinkedin, SiGithub, SiTwitter } from "react-icons/si";
+import { SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
+import { FaTwitter } from "react-icons/fa";
 import {
   Github_Link,
   Email_Link,
@@ -42,7 +43,7 @@ class SocialProfileClass extends Component {
         </a>
         <a href={Twitter_Link} title="Follow me on Twitter" className="icon-button twitter" target="_blank" rel='noopener noreferrer'>
           <i>
-            <SiTwitter title="Follow me on Twitter" />
+            <FaTwitter title="Follow me on Twitter" />
           </i>
         </a>
         <a href={Github_Link} title="Follow me on Github" className="icon-button github" target="_blank" rel='noopener noreferrer'>
